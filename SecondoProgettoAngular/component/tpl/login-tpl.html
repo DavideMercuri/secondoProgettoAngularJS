@@ -1,0 +1,14 @@
+<h2>Il componente login</h2>
+<h4>Condizioni e funzionalità</h4>
+
+<ul>
+  <li ng-repeat="condizione in condizioni">{{condizione}}</li>
+</ul>
+
+<form name="formUtente" novalidate ng-submit="submit(user.name, user.password, formUtente)">
+  <input ng-model="user.name" placeholder="Name"><br><br>
+  <input ng-model="user.password" type="password" placeholder="Password"><br><br>
+  <input type="submit">
+</form>
+
+{{risultato}}
